@@ -1,0 +1,71 @@
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navs {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: #f6f6f6;
+    overflow: hidden;
+    z-index: 9999;
+    border-bottom: 1px solid #ccc;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout-warning {
+    border-left-color: #aa6708;
+}
+.bs-callout-primary {
+    border-left-color: #D2317D;
+}
+.wrap {
+    margin: 0 auto;
+    width: 270px;
+    /*width: auto;*/
+}
+
+#navs a {
+    font-family: 'Helvetica Neue','Apple SD Gothic Neo','Trebuchet MS',NanumGothic,'Malgun Gothic',Dotum,Tahoma,serif;
+    line-height: 28px;
+    height: 28px;
+    display: block;
+    float: left;
+    padding: 0 12px;
+    border-right: 1px solid #e3e3e3;
+    text-decoration: none;
+    color: #a6a6a6;
+    font-size: 12px;
+}
+
+#navs a.r,
+#navs a:first-child {
+    border-left: 1px solid #e3e3e3
+}
+#navs a.r {
+    float: right
+}
+#navs a:hover,
+#navs a.on {
+    color: #000
+}

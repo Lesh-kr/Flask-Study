@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="bs-callout bs-callout-primary" id="callout-btn-group-tooltips">
+        <h4 id="">아주 죠은 메모장</h4>
+        <p>노트를 남겨보세요.</p>
+    </div>
+      <form method="post" action="{{ url_for('notepadHandler') }}">
+         <label for="title">제목입력</label>
+         <input type="text" name="title" /><br />
+         <label for="content">콘텐츠입력</label>
+         <input type="text" name="content" /><br />
+         <input type="submit" />
+      </form>
+{% endblock %}

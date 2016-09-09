@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flaskr</title>
+
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='font-awesome.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/1139fc0c57.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div id="navs">
+        <div class="wrap">
+          <a href="http://lesh.kr" target="_blank"><i class="fa fa-bookmark" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/lesh.lee.kor" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://github.com/Lesh-kr" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="http://boxbreakers.co" target="_blank">박스브레이커스</a>
+          <a href="/notepad/">메모장</a>
+        </div>
+      </div>
+    </div>
+    <div class="main col-md-8 col-md-offset-2">
+      {% block body %}{% endblock %}
+    </div>
+  </body>
+</html>
