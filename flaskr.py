@@ -1,9 +1,11 @@
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
+from flask.ext.sqlalchemy import SQLAlchemy
 from contextlib import closing
-import pymysql
 
 app = Flask(__name__)
+app.config.from_pyfile('config.py')
+db = SQLAlchemy(app)
 
 @app.route('/')
 def main():
