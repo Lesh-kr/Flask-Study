@@ -26,4 +26,3 @@ def all_notes():
         serialized_note = serialize(note)
         result.append(serialized_note)
     return jsonify(total_count=count, notes=result)
-
